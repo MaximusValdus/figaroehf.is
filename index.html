@@ -6,7 +6,7 @@
 <title>Figaro ehf — Óháð verðmöt og fjármögnunarráðgjöf</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
 :root {
   /* Navy */
@@ -27,7 +27,7 @@
   /* Semantic */
   --positive:#2F6F44; --negative:#9B2D2D; --caution:#B07A1F;
   /* Type */
-  --font-display:'EB Garamond','Garamond',serif;
+  --font-display:'Source Serif 4','Source Serif Pro',Georgia,'Times New Roman',serif;
   --font-sans:'Instrument Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
 }
 *,*::before,*::after{box-sizing:border-box;}
@@ -111,8 +111,8 @@ a:hover{color:var(--navy-900);}
 .hero-actions{display:flex;align-items:center;gap:24px;margin:32px 0 48px;flex-wrap:wrap;}
 .hero-actions a{border-bottom:0;}
 .meta-strip{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:48px;
-  padding-top:24px;
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px;
+  padding-top:24px;max-width:680px;
 }
 .meta-strip > div{display:flex;flex-direction:column;gap:6px;}
 .meta-strip .eyebrow{margin-bottom:4px;}
@@ -147,6 +147,11 @@ em{font-style:italic;}
 .approach-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;}
 .approach-grid h3{color:var(--paper-50);font-family:var(--font-sans);font-size:18px;margin-bottom:12px;}
 .approach-grid p{color:var(--paper-200);font-size:15px;line-height:1.7;}
+/* Partner logo (Guinness page) */
+.partner-logo{
+  height:48px;width:auto;display:block;
+  margin:8px 0 24px;opacity:.92;
+}
 /* Funds (Guinness page) */
 .fund-cards{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin:48px 0;}
 .fund-card{
@@ -311,9 +316,8 @@ section[id]{scroll-margin-top:80px;}
   </div>
   <hr class="rule-brand">
   <div class="meta-strip">
-    <div><span class="eyebrow">Eigandi</span><span class="value">Valdimar Hilmarsson</span></div>
-    <div><span class="eyebrow">Fagsvið</span><span class="value">Verðmat · DCF · ráðgjöf</span></div>
-    <div><span class="eyebrow">Lykilsamstarf</span><span class="value">Guinness Global Investors</span></div>
+    <div><span class="eyebrow">Þjónusta</span><span class="value">Greiningar · Fjármögnun · Milliganga</span></div>
+    <div><span class="eyebrow">Samstarfsaðilar</span><span class="value">Guinness Global Investors</span></div>
   </div>
 </section>
 
@@ -326,18 +330,18 @@ section[id]{scroll-margin-top:80px;}
     <div class="services-grid">
       <article class="service-card">
         <div class="service-num">01</div>
-        <h3 class="h3">Ráðgjöf</h3>
-        <p class="body">Aðstoð við fjármögnun og samskipti við fjármálastofnanir.</p>
+        <h3 class="h3">Greiningar og verðmöt</h3>
+        <p class="body">Fjárhagsgreiningar, viðskiptaáætlanir og verðmöt fyrirtækja.</p>
       </article>
       <article class="service-card">
         <div class="service-num">02</div>
-        <h3 class="h3">Greiningar og verðmöt</h3>
-        <p class="body">Fjárhagsgreiningar og verðmöt — DCF og kennitölur.</p>
+        <h3 class="h3">Fjármögnun</h3>
+        <p class="body">Aðstoð við fjármögnun og samtöl við banka, sjóði og fjárfesta.</p>
       </article>
       <article class="service-card">
         <div class="service-num">03</div>
-        <h3 class="h3">Erlendir sjóðir</h3>
-        <p class="body">Markaðssetning erlendra hlutabréfasjóða fyrir stofnanafjárfesta.</p>
+        <h3 class="h3">Milliganga</h3>
+        <p class="body">Tengsl milli innlendra og erlendra aðila í fjármálum.</p>
       </article>
     </div>
   </div>
@@ -364,17 +368,17 @@ section[id]{scroll-margin-top:80px;}
 
     <div class="service-detail">
       <div class="service-detail-num">01</div>
-      <h3 class="h2">Ráðgjöf</h3>
+      <h3 class="h2">Greiningar og verðmöt</h3>
       <div class="service-detail-grid">
         <div>
-          <p>Aðstoð við fjármögnun fyrirtækja og samskipti við banka, sjóði og fjárfesta — eigin fé, lánsfé eða blanda.</p>
+          <p>Fjárhagsgreiningar, viðskiptaáætlanir og verðmöt fyrir eigendur, stjórnir og kaupendur. DCF-leitt, krossstaðfest með kennitölum, byggt á íslenskum parametrum.</p>
         </div>
         <div class="suits-list">
           <h4>Hentar fyrir:</h4>
           <ul>
-            <li>Fyrirtæki í fjármögnunarferli</li>
-            <li>Eigendur í samtali við banka</li>
-            <li>Stjórnir í endurskipulagningu</li>
+            <li>Eigendur sem íhuga sölu</li>
+            <li>Stjórnir í kaupum eða samruna</li>
+            <li>Fyrirtæki sem þurfa viðskiptaáætlun fyrir fjármögnun</li>
           </ul>
         </div>
       </div>
@@ -382,17 +386,17 @@ section[id]{scroll-margin-top:80px;}
 
     <div class="service-detail">
       <div class="service-detail-num">02</div>
-      <h3 class="h2">Greiningar og verðmöt</h3>
+      <h3 class="h2">Fjármögnun</h3>
       <div class="service-detail-grid">
         <div>
-          <p>Vandaðar fjárhagsgreiningar og verjanleg verðmöt fyrir eigendur, stjórnir og viðskipti. DCF-leitt, krossstaðfest með kennitölum.</p>
+          <p>Aðstoð við fjármögnunarferli — eigin fé, lánsfé eða blanda. Skipulagning, fjárfestakynningar, samtöl við banka, sjóði og einstaka fjárfesta.</p>
         </div>
         <div class="suits-list">
           <h4>Hentar fyrir:</h4>
           <ul>
-            <li>Eigendur sem íhuga sölu</li>
-            <li>Stjórnir í kaupum eða samruna</li>
-            <li>Fjárfesta í áhættumati</li>
+            <li>Fyrirtæki í fjármögnunarferli</li>
+            <li>Eigendur í samtali við banka</li>
+            <li>Stjórnir í endurskipulagningu skulda</li>
           </ul>
         </div>
       </div>
@@ -400,17 +404,17 @@ section[id]{scroll-margin-top:80px;}
 
     <div class="service-detail">
       <div class="service-detail-num">03</div>
-      <h3 class="h2">Erlendir sjóðir</h3>
+      <h3 class="h2">Milliganga</h3>
       <div class="service-detail-grid">
         <div>
-          <p>Markaðssetning og kynning erlendra hlutabréfasjóða fyrir íslenska stofnanafjárfesta. Núverandi samstarf við Guinness Global Investors í London.</p>
+          <p>Tengsl milli innlendra og erlendra aðila í fjármálum. Núverandi samstarf við Guinness Global Investors í London.</p>
         </div>
         <div class="suits-list">
           <h4>Hentar fyrir:</h4>
           <ul>
-            <li>Stofnanafjárfesta</li>
-            <li>Lífeyrissjóði</li>
-            <li>Eignasafnsstjóra</li>
+            <li>Innlend fyrirtæki sem leita erlendra fjármögnunaraðila</li>
+            <li>Erlenda aðila með áhuga á íslenskum markaði</li>
+            <li>Stofnanafjárfesta sem leita erlendra sjóða</li>
           </ul>
         </div>
       </div>
@@ -468,10 +472,15 @@ section[id]{scroll-margin-top:80px;}
 <section id="guinness" class="section">
   <div class="container">
     <div class="section-head">
-      <div class="eyebrow">Lykilsamstarf</div>
+      <div class="eyebrow">Samstarfsaðilar</div>
       <h2 class="h1">Guinness Global Investors.</h2>
+      <!-- Hot-linked from guinnessgi.com — replace with local copy in assets/ if desired. -->
+      <img class="partner-logo" src="https://www.guinnessgi.com/themes/custom/gam/logo.svg" alt="Guinness Global Investors">
       <p class="lede">
-        Figaro er fulltrúi Guinness Global Investors á Íslandi.
+        Figaro er fulltrúi Guinness Global Investors á Íslandi — sjálfstæðrar fjárfestingarstýringar í London.
+      </p>
+      <p class="body" style="font-size:17px;max-width:720px;">
+        Guinness rekur einbeittar hlutabréfasjóði með áherslu á gæðafyrirtæki — fyrirtæki sem skila stöðugri arðsemi af fjármagni og hafa langtíma vaxtarmöguleika. Ian Mortimer og Matthew Page hafa stýrt báðum sjóðum frá útgáfu.
       </p>
     </div>
 
@@ -587,9 +596,9 @@ section[id]{scroll-margin-top:80px;}
       <div class="footer-cols">
         <div>
           <h4>Starfsemi</h4>
-          <a href="#thjonusta">Ráðgjöf</a>
           <a href="#thjonusta">Greiningar og verðmöt</a>
-          <a href="#thjonusta">Erlendir sjóðir</a>
+          <a href="#thjonusta">Fjármögnun</a>
+          <a href="#thjonusta">Milliganga</a>
           <a href="#guinness">Guinness Global Investors</a>
         </div>
         <div>
