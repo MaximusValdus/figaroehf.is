@@ -118,7 +118,7 @@ a:hover{color:var(--navy-900);}
 /* Hero (home — side-by-side with image) */
 .home-hero{background:var(--paper-50);overflow:hidden;}
 .home-hero-grid{
-  display:grid;grid-template-columns:1.7fr 1fr;
+  display:grid;grid-template-columns:3fr 1fr;
   min-height:520px;
 }
 .home-hero-text-wrap{
@@ -211,6 +211,68 @@ em{font-style:italic;}
 .guinness-band p{color:var(--paper-200);max-width:680px;margin:24px 0 32px;font-size:18px;line-height:1.7;}
 .guinness-band a{color:var(--brass-400);border-bottom-color:var(--brass-400);}
 .guinness-band a:hover{color:var(--brass-200);border-bottom-color:var(--brass-200);}
+
+/* About — info card with title (Lykilupplýsingar variant) */
+.info-card-detail{
+  background:var(--paper-50);border:1px solid var(--ink-200);border-radius:4px;
+  padding:32px 36px;display:flex;flex-direction:column;gap:24px;
+  position:sticky;top:96px;
+}
+.info-card-detail h3{
+  font-family:var(--font-display);font-weight:400;font-size:22px;
+  color:var(--ink-900);margin:0 0 8px;padding-bottom:16px;
+  border-bottom:1px solid var(--ink-200);
+}
+.info-card-section{
+  display:flex;flex-direction:column;gap:4px;
+  padding-bottom:20px;border-bottom:1px solid var(--ink-200);
+}
+.info-card-section:last-child{border-bottom:0;padding-bottom:0;}
+.info-card-section .eyebrow{
+  color:var(--brass-700);margin-bottom:6px;font-size:11px;
+}
+.info-card-section .value{
+  font-size:15px;color:var(--ink-900);line-height:1.45;
+}
+.info-card-section .value-sub{
+  font-size:13px;color:var(--ink-600);line-height:1.4;
+}
+
+/* About subtitle (under heading in section 01) */
+.about-subtitle{
+  font-family:var(--font-sans);font-size:15px;color:var(--ink-600);
+  margin:-8px 0 24px;letter-spacing:.01em;
+}
+
+/* Approach quote (right side of section 02) */
+.approach-quote{
+  background:var(--paper-50);border:1px solid var(--ink-200);border-radius:4px;
+  padding:40px 36px;
+  position:sticky;top:96px;
+  border-left:3px solid var(--brass-700);
+}
+.approach-quote blockquote{
+  margin:0;font-family:var(--font-display);font-style:italic;
+  font-size:22px;line-height:1.5;color:var(--ink-800);
+  border:0;padding:0;
+}
+
+/* CTA band before footer */
+.cta-band{
+  background:var(--navy-900);color:var(--paper-50);
+  padding:64px 0;
+}
+.cta-band .container{display:block;}
+.cta-grid{
+  display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center;
+}
+.cta-grid h2{color:var(--paper-50);font-family:var(--font-display);font-weight:400;font-size:32px;margin:0 0 8px;}
+.cta-grid p{color:var(--paper-200);font-size:16px;margin:0;max-width:560px;}
+.cta-band .btn-primary{
+  background:var(--paper-50);color:var(--navy-900);
+  border:1px solid var(--paper-50);
+}
+.cta-band .btn-primary:hover{background:var(--paper-200);color:var(--navy-900);border-color:var(--paper-200);}
 
 /* About — numbered sections + meta */
 .about-layout{display:grid;grid-template-columns:2fr 1fr;gap:64px;margin-top:48px;}
@@ -385,7 +447,8 @@ section[id]{scroll-margin-top:80px;}
 /* Responsive */
 @media (max-width:900px){
   .h-display{font-size:42px;} .h1{font-size:36px;} .h2{font-size:26px;}
-  .services-grid,.fund-cards,.contact-grid,.about-layout,.page-hero-grid,.home-hero-grid{grid-template-columns:1fr;}
+  .services-grid,.fund-cards,.contact-grid,.about-layout,.page-hero-grid,.home-hero-grid,.cta-grid{grid-template-columns:1fr;}
+  .info-card-detail,.approach-quote{position:static;}
   .home-hero-grid{min-height:auto;}
   .home-hero-text-wrap{padding:48px 24px;justify-content:flex-start;}
   .home-hero-image{aspect-ratio:16/10;min-height:auto;}
