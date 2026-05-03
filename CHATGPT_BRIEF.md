@@ -62,7 +62,7 @@ Do not use brass for primary CTAs or body text — only as a decorative accent.
 2. **Fjármögnun** — Við styðjum fyrirtæki og eigendur í fjármögnunarferlum, hvort sem um er að ræða eiginfjármögnun, lánsfjármögnun eða blandaða fjármögnun. Aðstoðin getur náð frá undirbúningi og fjárfestakynningum til samskipta við banka, sjóði og fjárfesta.
    - Algeng verkefni: Fyrirtæki í fjármögnunarferli · Eigendur í viðræðum við banka eða fjárfesta · Endurfjármögnun eða endurskipulagning skulda
 
-3. **Milliganga** — Figaro aðstoðar innlenda og erlenda aðila við að byggja upp tengsl á íslenskum fjármálamarkaði. Þjónustan felur meðal annars í sér markaðsinnsýn, kynningar, fundi og eftirfylgni gagnvart fagfjárfestum og stofnanafjárfestum.
+3. **Miðlun** — Figaro aðstoðar innlenda og erlenda aðila við að byggja upp tengsl á íslenskum fjármálamarkaði. Þjónustan felur meðal annars í sér markaðsinnsýn, kynningar, fundi og eftirfylgni gagnvart fagfjárfestum og stofnanafjárfestum.
    - Algeng verkefni: Innlend fyrirtæki sem leita erlendra fjármögnunaraðila · Erlendir aðilar með áhuga á íslenskum markaði · Sjóðastýringaraðilar sem vilja kynna sig fyrir íslenskum stofnanafjárfestum
 
 ## Hero (home page)
@@ -72,7 +72,7 @@ Do not use brass for primary CTAs or body text — only as a decorative accent.
 - Lede (italic): `Ráðgjöf, greiningar og verðmöt, og tenging við alþjóðlegt fjármálaumhverfi.`
 - CTAs: `Hafa samband` (filled navy) + `Lesa um nálgun okkar →` (text link)
 - Brass 48 px rule below CTAs
-- Meta strip with two columns: ÞJÓNUSTA: `Greiningar · Fjármögnun · Milliganga` | SAMSTARFSAÐILAR: `Guinness Global Investors`
+- Meta strip with two columns: ÞJÓNUSTA: `Greiningar · Fjármögnun · Miðlun` | SAMSTARFSAÐILAR: `Guinness Global Investors`
 
 ## Other pages still to design
 
@@ -95,7 +95,7 @@ Editorial finance photography, deep navy and warm-paper tones, cinematic lightin
 Service-card subjects that work:
 - **Card 01 (Greiningar):** magnifying glass on financial charts and printouts, calculator visible, warm desk lighting
 - **Card 02 (Fjármögnun):** empty modern boardroom at dusk, view of Reykjavík harbour or mountains through window, laptop and documents on long dark table
-- **Card 03 (Milliganga):** dark globe with glowing brass arcs connecting Iceland to London, New York, and other financial centers, night-side of earth visible
+- **Card 03 (Miðlun):** dark globe with glowing brass arcs connecting Iceland to London, New York, and other financial centers, night-side of earth visible
 
 ## What I want from you
 
