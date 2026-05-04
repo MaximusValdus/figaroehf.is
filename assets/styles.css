@@ -475,6 +475,25 @@ em{font-style:italic;}
 .perf-table .neg{color:var(--negative);}
 .footnote{font-size:12px;color:var(--ink-500);margin-top:16px;font-style:italic;}
 
+/* Regulatory disclosure note */
+.disclosure-note{
+  background:var(--paper-100);
+  border:1px solid var(--ink-200);
+  border-left:3px solid var(--brass-700);
+  border-radius:4px;
+  padding:24px 28px;
+  margin:48px 0;
+  max-width:760px;
+}
+.disclosure-note h4{
+  font-size:11px;text-transform:uppercase;letter-spacing:.14em;
+  color:var(--brass-700);margin:0 0 10px;font-weight:600;
+}
+.disclosure-note p{
+  font-size:14px;color:var(--ink-700);line-height:1.6;margin:0;
+  max-width:none;
+}
+
 /* Contact */
 .contact-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;margin-top:48px;}
 .contact-card{
