@@ -1,37 +1,37 @@
 <!doctype html>
-<html lang="is">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hafa samband — Figaro ehf</title>
-<meta name="description" content="Sendu Figaro ehf línur um stöðuna. Svar innan tveggja virkra daga á íslensku eða ensku.">
+<title>Contact — Figaro ehf</title>
+<meta name="description" content="Send Figaro ehf a line. We respond to all enquiries as quickly as possible — usually within the same business day.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="../assets/styles.css">
 </head>
 <body>
 
 <header class="header">
   <div class="header-inner">
     <a class="brand" href="index.html" aria-label="Figaro ehf">
-      <img class="brand-logo" src="assets/figaro-logo.png" alt="Figaro ehf">
+      <img class="brand-logo" src="../assets/figaro-logo.png" alt="Figaro ehf">
     </a>
     <nav class="nav">
-      <a href="index.html#thjonusta">Þjónusta</a>
-      <a href="um.html">Um Figaro</a>
+      <a href="index.html#services">Services</a>
+      <a href="about.html">About</a>
       <a href="guinness.html">Guinness</a>
-      <a href="hafa-samband.html" class="active">Hafa samband</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
     <div class="lang-switcher">
-      <a href="hafa-samband.html" class="active" aria-label="Íslenska" title="Íslenska">
+      <a href="../hafa-samband.html" aria-label="Íslenska" title="Íslenska">
         <svg viewBox="0 0 25 18" xmlns="http://www.w3.org/2000/svg"><rect width="25" height="18" fill="#02529C"/><rect x="7" width="2" height="18" fill="#FFF"/><rect y="8" width="25" height="2" fill="#FFF"/><rect x="7.5" width="1" height="18" fill="#DC1E35"/><rect y="8.5" width="25" height="1" fill="#DC1E35"/></svg>
       </a>
-      <a href="en/contact.html" aria-label="English" title="English">
+      <a href="contact.html" class="active" aria-label="English" title="English">
         <svg viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg"><clipPath id="t"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
       </a>
     </div>
-    <a href="hafa-samband.html" class="btn btn-primary">Hafa samband</a>
+    <a href="contact.html" class="btn btn-primary">Contact</a>
   </div>
 </header>
 
@@ -40,14 +40,14 @@
     <div class="page-hero-grid">
       <div class="page-hero-text">
         <div class="eyebrow">Figaro ehf · Reykjavík</div>
-        <h1 class="h-display">Hafa samband</h1>
+        <h1 class="h-display">Contact</h1>
         <p class="lede">
-          Sendu okkur línu og við munum hafa samband eins fljótt og auðið er.
+          Send us a line and we'll get back to you as soon as possible.
         </p>
         <hr class="rule-brass">
       </div>
       <div class="page-hero-image">
-        <img src="assets/page-contact.jpg" alt="" style="object-position:center bottom;" onerror="this.style.display='none'">
+        <img src="../assets/page-contact.jpg" alt="" style="object-position:center bottom;" onerror="this.style.display='none'">
       </div>
     </div>
   </div>
@@ -57,40 +57,39 @@
   <div class="container">
     <div class="contact-grid">
       <div class="contact-card">
-        <h3>Sendu okkur skilaboð</h3>
-        <!-- Form: replace YOUR_FORM_ID below with the ID from formspree.io after sign-up. -->
+        <h3>Send us a message</h3>
         <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
           <div class="field">
-            <label for="name">Nafn</label>
+            <label for="name">Name</label>
             <input id="name" name="name" type="text" required>
           </div>
           <div class="field">
-            <label for="email">Netfang</label>
+            <label for="email">Email</label>
             <input id="email" name="email" type="email" required>
           </div>
           <div class="field">
-            <label for="company">Fyrirtæki</label>
-            <input id="company" name="company" type="text" placeholder="Valfrjálst">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" placeholder="Optional">
           </div>
           <div class="field">
-            <label for="note">Erindi</label>
-            <textarea id="note" name="note" rows="6" placeholder="Skrifaðu okkur línu"></textarea>
+            <label for="note">Message</label>
+            <textarea id="note" name="note" rows="6" placeholder="Drop us a line"></textarea>
           </div>
           <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-          <input type="hidden" name="_subject" value="Ný fyrirspurn frá figaroehf.is">
-          <button type="submit" class="btn btn-primary">Senda fyrirspurn</button>
+          <input type="hidden" name="_subject" value="New enquiry from figaroehf.is">
+          <button type="submit" class="btn btn-primary">Send enquiry</button>
         </form>
       </div>
 
       <div>
         <div class="info-card">
-          <h3>Upplýsingar</h3>
+          <h3>Information</h3>
           <div class="info-row">
             <div class="info-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
             </div>
             <div class="info-content">
-              <span class="eyebrow">Netfang</span>
+              <span class="eyebrow">Email</span>
               <span class="value"><a href="mailto:valdimar@figaroehf.is">valdimar@figaroehf.is</a></span>
             </div>
           </div>
@@ -99,7 +98,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             </div>
             <div class="info-content">
-              <span class="eyebrow">Sími</span>
+              <span class="eyebrow">Phone</span>
               <span class="value"><a href="tel:+3548928046" style="color:inherit;">+354 892 8046</a></span>
             </div>
           </div>
@@ -108,8 +107,8 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
             </div>
             <div class="info-content">
-              <span class="eyebrow">Tungumál</span>
-              <span class="value">Íslenska · English</span>
+              <span class="eyebrow">Languages</span>
+              <span class="value">Icelandic · English</span>
             </div>
           </div>
           <div class="info-row">
@@ -117,8 +116,8 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
             </div>
             <div class="info-content">
-              <span class="eyebrow">Þjónusta</span>
-              <span class="value">Greiningar · Fjármögnun · Miðlun</span>
+              <span class="eyebrow">Services</span>
+              <span class="value">Analyses · Financing · Brokerage</span>
             </div>
           </div>
         </div>
@@ -128,8 +127,8 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
           </div>
           <div>
-            <h4>Við svörum öllum fyrirspurnum eins fljótt og auðið er</h4>
-            <p>Svörum oftast samdægurs.</p>
+            <h4>We respond to all enquiries as quickly as possible</h4>
+            <p>Usually within the same business day.</p>
           </div>
         </div>
       </div>
@@ -138,7 +137,7 @@
 </section>
 
 <div class="image-strip">
-  <img src="assets/page-contact-strip.jpg" alt="" onerror="this.style.display='none'">
+  <img src="../assets/page-contact-strip.jpg" alt="" onerror="this.style.display='none'">
 </div>
 
 <footer class="footer-slim">
@@ -152,10 +151,10 @@
         </div>
       </a>
       <div class="footer-tagline">
-        Traust ráðgjöf. Skýr sýn. Sterk tengsl.
+        Trusted advisory. Clear view. Strong connections.
         <span class="footer-tagline-rule" aria-hidden="true"></span>
       </div>
-      <div class="footer-copy">© 2026 Figaro ehf · Allur réttur áskilinn</div>
+      <div class="footer-copy">© 2026 Figaro ehf · All rights reserved</div>
     </div>
   </div>
 </footer>
