@@ -159,8 +159,13 @@ Settings come from environment variables (prefix `ASSISTANT_`) or a `.env` file:
 ## Testing
 
 ```bash
-python -m pytest
+python -m pytest          # or: make test
 ```
+
+A GitHub Actions workflow (`.github/workflows/ci.yml`) runs the suite on
+Python 3.10–3.12. It is inert while this project lives in a subdirectory and
+activates automatically once the directory becomes a repository root.
+Common tasks are also wrapped in a `Makefile` (`make help`).
 
 The suite covers brief generation (`test_brief.py`), the permission model and
 approval workflow (`test_permissions.py`), and the HTTP API (`test_api.py`).
