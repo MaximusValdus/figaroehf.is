@@ -95,11 +95,16 @@ Live within ~30 sec.
 
 ## Updating Guinness fund table
 
-Once a month, refresh the NAV / YTD / 1 yr / 3 yr numbers from the Guinness factsheets:
+Once a month, refresh the NAV / YTD / 1 yr / 3 yr numbers from the Guinness factsheets (Y EUR Acc class):
 - [Global Equity Income factsheet](https://www.guinnessgi.com/sites/default/files/factsheets/guinness-global-equity-income-fund-en.pdf)
 - [Global Innovators factsheet](https://www.guinnessgi.com/sites/default/files/factsheets/guinness-global-innovators-fund-en.pdf)
 
-In `index.html`, search for `Verð miðað við` to find the table — update the date and the 8 number cells. Commit, push, done.
+The table lives in **two** files — update both:
+
+- `guinness.html` — search for `Ávöxtun (í EUR)`. Icelandic number format: decimal **comma** (`25,3062`, `-0,6%`), date as `DD.MM.YYYY`.
+- `en/guinness.html` — search for `Performance (in EUR)`. English number format: decimal **point** (`25.3062`, `-0.6%`), date as `D Mon YYYY` (e.g. `30 Apr 2026`).
+
+In each file update: the date in the table heading, the 8 number cells (NAV / YTD / 1 ár / 3 ár per fund), the `pos`/`neg` class on each cell to match the sign, and the factsheet month in the footnote below the table. Commit, push, done.
 
 ## Adding the English version (later)
 
